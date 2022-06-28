@@ -1,0 +1,184 @@
+.information
+    padding-top: 110px
+    &-block
+        width: 1140px
+        margin: 0 auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        &__main
+            width: 730px
+            &_photo
+                width: 100%
+                height: 487px
+                margin-bottom: 20px
+                img
+                    width: 100%
+                    height: 100%
+            &_title
+                font-family: Open Sans
+                font-size: 42px
+                margin-top: 20px
+                font-weight: 700
+                color: #1f1f1f
+            &_box
+                display: flex
+                height: 50px
+                margin-bottom: 30px
+                margin-top: 30px
+                img
+                    height: 100%
+                    width: 50px
+                    border-radius: 50%
+                &_descr
+                    margin-left: 10px
+                &_text
+                    font-family: Open Sans
+                    font-weight: 600
+                    color: #1f1f1f
+                    font-size: 14px
+                    line-height: 1.8
+                    span
+                        font-size: 13px
+                        color: #86858C
+            &_paragraph
+                font-family: Open Sans
+                font-size: 14px
+                color: #868686
+                line-height: 1.8
+                margin-bottom: 20px
+                span
+                    color: $main-color
+            &_minititle
+                font-family: Open Sans
+                font-weight: 700
+                color: #1f1f1f
+                font-size: 26px
+                margin-bottom: 20px
+            &_quote
+                position: relative
+                margin-left: 50px
+                font-family: Open Sans
+                font-size: 16px
+                font-weight: 600
+                color: #1f1f1f
+                margin-bottom: 20px
+                &::before
+                    content: ''
+                    position: absolute
+                    background: url('../icons/quote-left-solid.svg') no-repeat
+                    width: 30px
+                    height: 30px
+                    left: -50px
+                &_author
+                    display: flex
+                    align-items: center
+                    position: relative
+                    margin-left: 65px 
+                    color: $main-color
+                    &::before
+                        content: ''
+                        position: absolute
+                        width: 10px
+                        height: 2px
+                        background-color: $main-color
+                        left: -16px
+            &_photos
+                display: flex
+                justify-content: space-between
+                height: 230px
+                margin-bottom: 20px
+                img
+                    height: 100%
+                    width: 45%
+
+        &__sidepanel
+            width: 380px
+            &_box
+                // height: 418px
+                width: 100%
+                padding: 40px 46px
+                background-color: #fff
+                border: 1px solid #f2f2f2
+            &_icon
+                display: flex
+                justify-content: center
+                img
+                    border-radius: 50%
+                    width: 100px
+                    height: 90px
+            &_name
+                margin-top: 20px
+                text-align: center
+                font-size: 20px
+                font-family: Open Sans
+                font-weight: 700
+                margin-bottom: 10px
+            &_text
+                font-family: Open Sans
+                font-size: 14px
+                color: #838383
+                line-height: 1.8
+                width: 290px
+                // margin: 0 auto
+                text-align: center
+            &_soc
+                display: flex
+                justify-content: space-around
+                a
+                    width: 40px
+                    height: 40px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border-radius: 50%
+                    border: 1px solid grey 
+                    transition: .3s
+                    &:hover
+                        background-color: $main-color
+                    img
+                        width: 50%
+                        height: 50%
+            &_latestnews
+                margin-top: 50px
+                padding: 40px 46px
+                background-color: #fff
+                border: 1px solid #f2f2f2
+                width: 100%
+                &_title
+                    position: relative
+                    font-family: Open Sans
+                    font-weight: 700
+                    margin-bottom: 30px
+                    font-size: 18px
+                    &::before
+                        content: ''
+                        position: absolute
+                        height: 100%
+                        width: 4px
+                        background-color: $main-color
+                        left: -46px
+                &_box
+                    display: flex
+                    justify-content: space-between
+                    width: 100%
+                    margin-bottom: 30px
+                    img
+                        height: 100px
+                        width: 100px
+                &_block
+                    margin-left: 15px                        
+                &_text
+                    margin-top: 15px
+                    font-size: 14px
+                    color: #707070
+                &_link
+                    a
+                        font-family: Open Sans
+                        font-size: 15px
+                        color: #1f1f1f
+                        font-weight: 700
+                        transition: .3s
+                        &:hover
+                            color: $main-color
+

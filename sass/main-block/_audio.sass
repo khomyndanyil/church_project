@@ -1,0 +1,79 @@
+.audio
+    position: relative
+    height: 400px
+    width: 100%
+    &-block
+        display: flex
+        justify-content: space-between
+        &__title
+            text-transform: uppercase
+            font-weight: 600
+            margin-bottom: 5px
+            color: $main-color
+            font-family: 'La Belle Aurore', cursive
+            font-size: 20px
+            line-height: 1.5
+        &__subtitle
+            font-family: Open sans
+            font-weight: 900
+            font-size: 26px
+            margin-bottom: 15px
+        &__text
+            font-size: 14px
+            line-height: 1.8
+            margin-bottom: 25px
+            color: #838383
+            span
+                a
+                    font-family: Open sans
+                    font-weight: 600
+                    color: $main-color
+        &__soc
+            display: flex
+            margin-bottom: 40px
+            &_icon
+                width: 40px
+                height: 40px
+                background-color: #ffebdd
+                margin-right: 25px
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                &:hover
+                    background-color: $main-color
+                    svg 
+                        fill: white
+                svg
+                    width: 20px
+                    height: 20px
+                    fill: $main-color
+                    
+        &_1
+            padding: 45px 40px
+            // position: absolute
+            width: 540px
+            height: 390px
+            background: white
+            // left: 110px
+            // top: -90px
+            img
+                position: absolute
+                top: -15px
+                left: 0
+
+        &_2
+            padding: 45px 40px
+            // position: absolute
+            width: 540px
+            height: 390px
+            background: white
+            // right: 110px
+            // top: -90px
+            img
+                position: absolute
+                top: -15px
+                left: 0
+        &__player
+            audio
+                fill: $main-color

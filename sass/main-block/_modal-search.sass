@@ -1,0 +1,85 @@
+.modal
+    &-search
+        top: 0
+        display: none
+        position: fixed
+        height: 100%
+        width: 100%
+        z-index: 300
+        background: rgba(0, 0, 0, 0.7)
+        &_active
+            display: block
+        form
+            margin: 0 auto
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+            width: 70%
+            input
+                width: 100%
+                height: 100%
+                background-color: transparent
+                border: 0
+                border-bottom: 2px solid #fff
+                color: white
+                font-size: 40px
+                padding: 20px 0
+                outline: none
+                padding-right: 40px
+                padding-left: 10px
+            svg
+                top: 50%
+                transform: translateY(-50%)
+                position: absolute
+                width: 30px
+                height: 30px
+                right: 0
+                cursor: pointer
+                fill: white
+                transition: .3s
+                &:hover
+                    fill: $main-color
+        &_close
+            position: absolute
+            width: 50px
+            height: 50px
+            top: 60px
+            right: 60px
+            cursor: pointer
+            svg
+                width: 100%
+                height: 100%
+                fill: white
+                transition: .3s
+                &:hover
+                    fill: $main-color
+            // span
+            //     position: absolute
+            //     display: block
+            //     width: 4px
+            //     background-color: white
+            //     transform: rotate(45deg)
+            //     height: 40px
+            //     transition: .4s
+            //     right: 0
+            //     top: 0
+            //     &:nth-child(1)
+                    
+            //     &:nth-child(2)
+            //         transform: rotate(-45deg)
+                    
+                    
+            // &:hover
+            //     span
+            //         transform: rotate(90deg)
+            //         &:nth-child(2)
+            //             transform: rotate(-90deg)
+
+                        
+
+                    
+                
+
+                    
+
+                

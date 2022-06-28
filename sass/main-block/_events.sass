@@ -1,0 +1,82 @@
+.events
+    padding-bottom: 110px
+    &_top
+        padding-top: 110px
+    &-block
+        display: flex
+        &__text
+            width: 700px
+            margin-right: 60px
+            &_subtitle
+                font-family: "La Belle Aurore", cursive
+                font-size: 22px
+                font-weight: 600
+                color: $main-color
+                margin-bottom: 5px
+            &_title
+                font-family: Open Sans
+                font-size: 50px
+                font-weight: 700
+                color: black
+                margin-bottom: 15px
+            &_descr
+                font-family: Open Sans
+                font-size: 14px
+                line-height: 1.8
+                margin-bottom: 15px
+                color: rgb(131, 131, 131)
+            &_link
+                position: relative
+                font-family: Open Sans
+                font-size: 14px
+                font-weight: 600
+                color: black
+                &:hover
+                    color: $main-color
+                &::after
+                    content: ''
+                    position: absolute
+                    background: url('../icons/arrow-right-solid.svg') no-repeat
+                    width: 20px
+                    height: 20px
+                    right: -27px
+                    top: 0
+        &__box
+            width: 100%
+            &_bg
+                position: relative
+                height: 150px
+                background-color: $main-color
+                display: flex
+            &_tablet
+                margin-left: 40px
+                display: flex
+            &_item
+                flex-direction: column
+            &_title
+                left: 40px
+                position: absolute
+                bottom: 0
+                width: 185px
+                height: 55px
+                background: black
+                color: white
+                display: flex
+                align-items: center
+                justify-content: center
+                border-right: 2px solid #696969
+                font-family: Open Sans
+                font-size: 16px
+                &:nth-child(2)
+                    left: 225px
+                &:nth-child(3)
+                    left: 410px  
+            &_text
+                width: 185px
+                height: 55px
+                color: #696969
+                display: flex
+                align-items: center
+                border: 1px solid #696969
+                padding-left: 13px
+                

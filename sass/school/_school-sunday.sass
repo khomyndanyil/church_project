@@ -1,0 +1,82 @@
+.school
+    &-sunday
+        padding-top: 110px
+        padding-bottom: 110px
+        &__block
+            display: flex
+            justify-content: space-between
+            width: 1140px
+            margin: 0 auto
+            &_text
+                width: 45%
+                &_subtitle
+                    font-family: La Belle Aurore
+                    color: $main-color
+                    margin-bottom: 5px
+                    font-size: 22px
+                    font-weight: 600
+                &_title
+                    font-family: Open Sans
+                    font-size: 50px
+                    color: #1f1f1f
+                    font-weight: 700
+                    margin-bottom: 15px
+                &_descr
+                    font-family: Open Sans
+                    font-size: 14px
+                    line-height: 1.8
+                    margin-bottom: 15px
+                    color: #838383
+                    font-weight: 400
+            &_photo
+                width: 45%
+                min-height: 100%
+                display: flex
+                align-items: center
+                img
+                    width: 100%
+                    transition: .6s
+                    
+        &__slider
+            padding-top: 80px
+            padding-bottom: 140px
+            &_title
+                font-family: Open Sans
+                font-size: 50px
+                color: #1f1f1f
+                font-weight: 700
+                margin-bottom: 40px
+                text-align: center
+            &_item
+                width: 930px
+                margin: 0 auto
+                div
+                    img
+                        height: 600px
+                        width: 100%
+                        transition: .6s
+                        
+.slick-prev_school
+    position: absolute
+    bottom: 50%
+    transform: translateY(-50%)
+    left: -130px
+    border: 0
+    background: none
+    &:hover
+        svg
+            fill: $main-color
+    svg
+        width: 50px
+.slick-next_school
+    position: absolute
+    bottom: 50%
+    transform: translateY(-50%)
+    right: -130px
+    border: 0
+    background: none
+    &:hover
+        svg
+            fill: $main-color
+    svg
+        width: 50px

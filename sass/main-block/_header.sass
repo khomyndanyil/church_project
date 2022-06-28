@@ -1,0 +1,245 @@
+header
+    border-bottom: 2px solid #efefef
+.navbar
+    display: flex
+    align-items: center
+    height: 87px
+    width: 100%
+    &-menu
+        display: flex
+        align-items: center
+    &-logo
+        a
+            display: flex
+            align-items: center
+            margin-right: 25px
+            font-family: Open sans
+            font-size: 20px
+            font-weight: 900
+            margin-left: 17px
+        img
+            height: 45px
+            width: 45px
+        &__title
+            font-family: Open sans
+            font-size: 19px
+            font-weight: 900
+            margin-left: 17px
+            color: #1f1f1f
+    &-block
+        display: flex
+        justify-content: space-between
+        width: 950px
+        &__link
+            height: 87px
+            display: flex
+            &_item
+                position: relative
+                font-family: Open sans
+                font-weight: 600
+                display: flex
+                font-size: 15px
+                color: #000 
+                text-decoration: none
+                transition: 1s
+                &::after
+                    content: ''
+                    display: flex
+                    align-self: center
+                    margin-top: 4px
+                    margin-left: 7px
+                    top: 6px
+                    right: -15px
+                    background: url('../icons/down.svg') no-repeat
+                    height: 13px
+                    width: 10px
+                    transition: 1s
+                &_contact
+                    font-weight: 600
+                    font-size: 15px
+                    color: #000 
+                    transition: .4s
+                    &:hover
+                        color: $main-color
+        &__other
+            display: flex
+            align-items: center
+            &_search
+                margin-right: 20px
+                svg
+                    cursor: pointer
+                    height: 21px
+                    width: 21px
+                    transition: .3s
+                    &:hover
+                        fill: #ff9044
+                &_white
+                    svg
+                        fill: #fff
+                        cursor: pointer
+                        height: 21px
+                        width: 21px
+                        transition: .3s
+                        &:hover
+                            fill: #ff9044
+            &_bag
+                position: relative
+                a
+                    color: #fff
+                svg
+                    cursor: pointer
+                    height: 21px
+                    width: 21px
+                    transition: .3s
+                    &:hover
+                        fill: #ff9044
+                &_white
+                    a
+                        svg
+                            fill: #fff
+                            &:hover
+                                fill: #ff9044
+
+                        
+                span
+                    position: absolute
+                    font-family: Open sans
+                    font-size: 10px
+                    font-weight: 600
+                    width: 20px
+                    height: 20px
+                    border-radius: 50%
+                    background: $main-color
+                    padding-left: 3px
+                    padding-top: 2px
+                    right: -12px
+                    top: -2px
+
+.sub-menu
+    &-list
+        position: absolute
+        display: none
+        flex-direction: column
+        top: 87px
+        align-items: flex-start
+        left: 0px
+        z-index: 999
+        width: 170px
+        padding-left: 0
+    &-link
+        height: 50px
+        width: 150px
+        padding-left: 18px
+        background: #fff
+        box-shadow: 0 0px 3px grey
+        margin-right: 0
+        width: 100%
+        padding-top: 11px
+        &:hover
+            background: #A9A9A9
+        a
+            color: #696969
+            &:hover
+                color: #696969
+.sub-sub_menu
+    &_list
+        position: absolute
+        display: none
+        flex-direction: column
+        top: 87px
+        align-items: flex-start
+        left: 0px
+        z-index: 999
+        width: 170px
+        padding-left: 0
+        left: 100%
+        top: 0
+        list-style-type: none
+    &_link
+        height: 50px
+        width: 150px
+        padding-left: 18px
+        background: #fff
+        box-shadow: 0 3px 3px grey
+        margin-right: 0
+        width: 100%
+        padding-top: 11px
+        &:hover
+            background: #A9A9A9
+        a
+            color: #696969
+            &:hover
+                color: #696969
+.add
+    &-menu
+        position: relative
+        box-shadow: 0 0px 3px grey
+        &::after
+            content: ''
+            position: absolute
+            background: url('../icons/down.svg') no-repeat
+            height: 13px
+            width: 10px
+            transform: rotate(-90deg)
+            right: 15px
+            top: 18px
+.sub-menu
+    &_list
+        position: relative
+    &_link
+        position: absolute
+        left: 0
+.menu
+    &-list   
+        display: flex
+        list-style-type: none   
+        align-items: center
+        margin-bottom: 0
+        justify-content: space-between
+        width: 400px
+        padding-left: 0 
+    &-link
+        position: relative
+        height: 100%
+        display: flex
+        align-items: center
+        margin-right: 30px
+        &:hover
+            a
+                &::after
+                    transform: rotate(180deg)
+
+
+
+.menu-link:hover .sub-menu-list
+    display: flex
+.add-menu:hover .sub-sub_menu_list
+    display: flex
+
+.header_fadeIn
+    width: 100%
+    display: none
+    position: fixed
+    top: 0
+    background: #1f1f1f
+    &_color
+        color: #fff
+        &::after
+            background: url('../icons/down_copy.svg') no-repeat
+.menu-logo
+    display: flex
+    justify-content: flex-start
+    align-items: center
+.menu-link:hover .navbar-block__link_item
+    color: $main-color
+.menu-link:hover .navbar-block__link_item::after
+    background: url('../icons/down_orange.svg') no-repeat
+
+
+
+
+
+
+
+
+                            

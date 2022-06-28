@@ -1,0 +1,124 @@
+.priests
+    padding-top: 110px
+    padding-bottom: 110px
+    &__subtitle
+        font-family: "La Belle Aurore", cursive
+        font-size: 22px
+        font-weight: 600
+        color: $main-color
+        text-align: center
+        margin-bottom: 5px
+    &__title
+        font-family: Open Sans
+        font-size: 50px
+        font-weight: 700
+        color: black
+        text-align: center
+        margin-bottom: 15px
+    &__text
+        width: 650px
+        font-size: 14px
+        line-height: 1.8
+        margin-bottom: 15px
+        color: rgb(131, 131, 131)
+        margin: 0 auto
+    &__more
+        display: block
+        position: relative
+        font-family: Open Sans
+        font-size: 14px
+        font-weight: 600
+        margin: 0 auto
+        color: black
+        width: 110px
+        padding-top: 15px
+        padding-bottom: 50px
+        &:hover
+            color: $main-color
+    &-block
+        display: flex
+        width: 1050px
+        margin: 0 auto
+        justify-content: space-between
+        &__item
+            width: 250px
+            height: 400px
+            border-bottom: 4px solid $main-color
+            img
+                width: 100%
+                height: 200px
+                transition: .6s
+               
+            &_name
+                display: block
+                position: relative
+                text-align: center
+                margin-bottom: 5px
+                margin-top: 30px
+                font-family: Open Sans
+                font-weight: 700
+                font-size: 20px
+                color: #000
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    bottom: 0
+                    right: 0
+                    height: 2px
+                    background-color: $main-color
+                    transition: .4s
+                    transform: scaleX(0)
+                &:hover
+                    color: $main-color
+                    &::before
+                        transform: scaleX(1)
+                a
+                    font-family: Open Sans
+                    font-weight: 700
+                    font-size: 20px
+                    color: #000
+                    
+            &_who
+                font-family: Open Sans
+                font-weight: 700
+                font-size: 15px
+                text-align: center
+                margin-top: 15px
+                color: $main-color
+            &_link
+                position: relative
+                font-family: Open Sans
+                font-size: 14px
+                font-weight: 600
+                color: rgb(131, 131, 131)
+                left: 35%
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    bottom: 0
+                    right: 0
+                    height: 2px
+                    background-color: $main-color
+                    transition: .4s
+                    transform: scaleX(0)
+                &::after
+                    content: ''
+                    position: absolute
+                    background: url('../icons/arrow-right-solid.svg') no-repeat
+                    width: 10px
+                    height: 10px
+                    right: -17px
+                    top: 6px
+                &:hover
+                    color: $main-color
+                    &::before
+                        transform: scaleX(1)
+.priests_photo_1
+    height: 360px
+    width: 100%
+    img
+        width: 100%
+        height: 100%
+                
